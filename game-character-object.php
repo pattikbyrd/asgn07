@@ -10,27 +10,20 @@
 
   include('inc-game-character-object.php');
   
-  $playerName = new Pirate();
-  $playerName = new Shark();
+  $char1 = new GameCharacter();
   
-   $score/////////////////////////////
-  $playerName->setPlayerName($pirate);
-  $playerName->setPlayerName($shark);
+  $char1->setPlayerName("Pirate");
+  $char1->setScore(25);
   
   
-  $score->setScore();
+  $char2 = new GameCharacter();
   
+  $char2->setPlayerName("Shark");
+  $char2->setScore(50);
+
   
+  print ("<p>The name of the first game character is ".$char1->getPlayerName()." and his score is ".$char1->getScore().". <br> The name of the second game character is ".$char2->getPlayerName()." and his score is ".$char2->getScore().".</p>")
   
   ?>
 </body>
 </html>
-  
-  
- 
-$alien->setNumberOfEyes(5);
-
-$alien->setNumberOfTentacles(15);
-
-
-print "<p>My alien has ".$alien->getNumberOfEyes()." eyes.</p>";
